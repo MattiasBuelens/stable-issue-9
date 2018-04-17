@@ -6,7 +6,7 @@ function component() {
     var test = acceptLanguage.create();
     test.languages(['en']);
 
-    element.innerHTML = test.get(null);
+    element.innerHTML = test.get('en-US,en;q=0.5');
 
     return element;
 }
